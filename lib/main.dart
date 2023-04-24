@@ -17,60 +17,35 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red[600],
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.end,
-        crossAxisAlignment: CrossAxisAlignment.end,
+      body: Row(
         children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: const [
-              Text(
-                'Hello',
-                style: TextStyle(
-                  fontFamily: "IndieFlower",
-                  color: Colors.pink,
-                  fontSize: 30.0,
-                ),
-              ),
-              Text('World'),
-            ],
+          Expanded(
+            flex: 3,
+            child: Image.asset('assets/grand_canyon1.jpeg'),
           ),
-          Row(
-            children: [
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Container(
-                  padding: const EdgeInsets.all(60),
-                  color: Colors.redAccent,
-                  child: const Padding(
-                    padding: EdgeInsets.all(16.0),
-                    child: Text('Two'),
-                  ),
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Container(
-                  padding: const EdgeInsets.all(60),
-                  color: Colors.redAccent,
-                  child: const Padding(
-                    padding: EdgeInsets.all(16.0),
-                    child: Text('Two'),
-                  ),
-                ),
-              ),
-            ],
+          Expanded(
+            flex: 1,
+            child: Container(
+              padding: const EdgeInsets.all(30),
+              color: Colors.cyan,
+              child: const Text('1'),
+            ),
           ),
-          Container(
-            padding: const EdgeInsets.all(40),
-            color: Colors.amber,
-            child: const Text('One'),
+          Expanded(
+            flex: 1,
+            child: Container(
+              padding: const EdgeInsets.all(30),
+              color: Colors.amber,
+              child: const Text('2'),
+            ),
           ),
-          Container(
-            padding: const EdgeInsets.all(80),
-            color: Colors.lightGreenAccent,
-            child: const Text('Three'),
+          Expanded(
+            flex: 1,
+            child: Container(
+              padding: const EdgeInsets.all(30),
+              color: Colors.red,
+              child: const Text('3'),
+            ),
           ),
         ],
       ),
