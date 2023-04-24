@@ -17,13 +17,9 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red[600],
       ),
-      body: Center(
-        child: IconButton(
-          onPressed: () {},
-          icon: const Icon(Icons.alternate_email),
-          color: Colors.red,
-          splashColor: Colors.amber,
-        ),
+      body: const Padding(
+        padding: EdgeInsets.all(90),
+        child: Text('Hello'),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
@@ -32,54 +28,34 @@ class Home extends StatelessWidget {
       ),
     );
   }
-} 
+}
 
-// Icon(
-//   Icons.airport_shuttle, // 원하는 아이콘 모양
-//   color = Colors.lightBlue, // 아이콘의 색상
-//   size = 50.0, // 아이콘의 사이즈
+// Container(
+//   padding: const EdgeInsets.all(20.0),
+//   color: Colors.amber[400],
+//   child: const Text('hello, world'),
 // )
 
-// ElevatedButton(
-//   onPressed: () {},
-//   style: ElevatedButton.styleFrom(
-//     foregroundColor: Colors.amber,
-//     backgroundColor: Colors.black,
-//   ),
-//   child: const Text('click me'),
+// Container(
+//   padding: const EdgeInsets.symmetric(horizontal: 30.0, vertical: 20.0),
+//   color: Colors.amber[400],
+//   child: const Text('hello, world'),
 // )
 
-// TextButton(
-//   onPressed: () {},
-//   style: TextButton.styleFrom(
-//     foregroundColor: Colors.redAccent,
-//     textStyle: const TextStyle(
-//       fontFamily: 'IndieFlower',
-//       fontSize: 80.0,
-//       fontStyle: FontStyle.italic,
-//     ),
-//   ),
-//   child: const Text('click me'),
+// Container(
+//   padding: const EdgeInsets.fromLTRB(90, 30, 50, 80),
+//   color: Colors.amber[400],
+//   child: const Text('hello, world'),
 // )
 
-// ElevatedButton.icon(
-//   onPressed: () {},
-//   style: ElevatedButton.styleFrom(
-//     backgroundColor: Colors.amber,
-//   ),
-//   icon: const Icon(Icons.mail),
-//   label: const Text('Mail Me'),
+// Container(
+//   padding: const EdgeInsets.fromLTRB(90, 30, 50, 80),
+//   margin: const EdgeInsets.all(100),
+//   color: Colors.amber[400],
+//   child: const Text('hello, world'),
 // )
 
-// IconButton(
-//   onPressed: () {},
-//   icon: const Icon(Icons.alternate_email),
-//   color: Colors.red,
-//   splashColor: Colors.amber,
-// )
-
-// OutlinedButton(
-//   onPressed: () {},
-//   style: OutlinedButton.styleFrom(shape: const StadiumBorder()),
-//   child: const Text('Hello'),
+// Padding(
+//   padding: EdgeInsets.all(90),
+//   child: Text('Hello'),
 // )
