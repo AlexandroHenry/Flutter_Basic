@@ -17,9 +17,25 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red[600],
       ),
-      body: const Padding(
-        padding: EdgeInsets.all(90),
-        child: Text('Hello'),
+      body: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Text('Hello, world'),
+          TextButton(
+            onPressed: () {},
+            style: TextButton.styleFrom(
+              foregroundColor: Colors.deepOrange,
+              backgroundColor: Colors.purple,
+            ),
+            child: const Text('this is button'),
+          ),
+          Container(
+            color: Colors.cyan,
+            padding: const EdgeInsets.all(30.0),
+            child: const Text('inside container'),
+          ),
+        ],
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
@@ -29,33 +45,3 @@ class Home extends StatelessWidget {
     );
   }
 }
-
-// Container(
-//   padding: const EdgeInsets.all(20.0),
-//   color: Colors.amber[400],
-//   child: const Text('hello, world'),
-// )
-
-// Container(
-//   padding: const EdgeInsets.symmetric(horizontal: 30.0, vertical: 20.0),
-//   color: Colors.amber[400],
-//   child: const Text('hello, world'),
-// )
-
-// Container(
-//   padding: const EdgeInsets.fromLTRB(90, 30, 50, 80),
-//   color: Colors.amber[400],
-//   child: const Text('hello, world'),
-// )
-
-// Container(
-//   padding: const EdgeInsets.fromLTRB(90, 30, 50, 80),
-//   margin: const EdgeInsets.all(100),
-//   color: Colors.amber[400],
-//   child: const Text('hello, world'),
-// )
-
-// Padding(
-//   padding: EdgeInsets.all(90),
-//   child: Text('Hello'),
-// )
