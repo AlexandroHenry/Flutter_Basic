@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'quote.dart';
 
 void main() {
   runApp(const MaterialApp(
@@ -14,10 +15,19 @@ class QuoteList extends StatefulWidget {
 }
 
 class _QuoteListState extends State<QuoteList> {
-  List<String> quotes = [
-    'Be yourself; everyone else is already taken',
-    'I have nothing to declare except my genius',
-    'The truth is rarely pure and never simple',
+  List<Quote> quotes = [
+    Quote(
+      author: 'Oscar Wilde',
+      text: 'Be yourself; everyone else is already taken',
+    ),
+    Quote(
+      author: '영웅주의',
+      text: '넌 날 이길 수 없다, 세상 갖기 위한 영웅주의',
+    ),
+    Quote(
+      author: '손웅정',
+      text: '우리 흥밍이 절대 월드 클라스 아니에요',
+    ),
   ];
 
   @override
@@ -38,7 +48,7 @@ class _QuoteListState extends State<QuoteList> {
       body: Column(
         children: quotes
             .map((quote) => Text(
-                  quote,
+                  '${quote.text} - ${quote.author}',
                   style: const TextStyle(
                     fontFamily: 'IndieFlower',
                     fontSize: 30,
