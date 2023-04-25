@@ -2,12 +2,14 @@ import 'package:flutter/material.dart';
 import 'quote.dart';
 
 class QuoteCard extends StatelessWidget {
+  final Quote quote;
+  final void Function()? delete;
+
   const QuoteCard({
     super.key,
     required this.quote,
+    required this.delete,
   });
-
-  final Quote quote;
 
   @override
   Widget build(BuildContext context) {
@@ -32,6 +34,12 @@ class QuoteCard extends StatelessWidget {
                 fontSize: 14.0,
                 color: Colors.grey[800],
               ),
+            ),
+            const SizedBox(height: 8),
+            TextButton.icon(
+              onPressed: delete,
+              label: const Text('Delete Quote'),
+              icon: const Icon(Icons.delete),
             )
           ],
         ),
